@@ -1,0 +1,129 @@
+body{
+    background-image: url("image4.png");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+h1{
+    color:antiquewhite;
+    font-size:50px;
+    text-align: center;
+    font-weight: bold;
+    animation: lia 2s ease-in-out;
+}
+li a{
+    color:#c2661b;
+    font-size:20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    animation: lia 2s ease-in-out;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+    color:antiquewhite;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;;
+}
+ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+#PD{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    animation:lia2 3s ease-in-out;
+}
+img{
+    position: absolute;
+    width: 300px;
+    margin: auto;
+    display: block;
+    height: 300px;
+    animation: lia1 2s ease-in-out;
+}
+input[type="submit"], input[type="reset"] {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c2661b;
+    color: white;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container {
+    color:#452829;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    height: 80vh;
+}
+input::placeholder, textarea::placeholder {
+    color: rgb(31, 30, 30);
+    text-align: center;
+}
+form{
+    text-align: center;
+    width: 100%;
+    animation: lia2 2s ease-in-out;
+}
+@keyframes lia {
+    0% {
+        transform: translateY(-250%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes lia1 {
+    0% {
+        transform: translateX(-100%) rotate(0) translateY(-10%);
+    }
+    50%
+    {
+        transform: translateX(100%) rotate(-20deg) translateY(-10%);
+    }
+    100% {
+        transform: translateX(0) rotate(0) translateY(0);
+    }
+}
+@keyframes lia2 {
+    0% {
+        transform: translateY(150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    body{
+        overflow-y: scroll;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    img {
+        z-index: -99;;
+        width: 100%;
+        height: auto;
+    }
+}
+label{
+    font-size: 20px;
+}
